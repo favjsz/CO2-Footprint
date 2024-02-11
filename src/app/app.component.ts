@@ -8,7 +8,8 @@ import { ContentComponent } from './content/content.component';
   standalone: true,
   imports: [RouterOutlet,
   HeaderNavComponent,
-  ContentComponent
+  ContentComponent,
+
   ],
   templateUrl: './app.component.html', 
   styleUrl: './app.component.css'

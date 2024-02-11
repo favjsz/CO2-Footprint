@@ -1,0 +1,45 @@
+#sidebar{
+    background-color: rgb(184, 184, 213);
+} 
+
+/*
+Design Main
+Overflow verhindert das Darstellen von Inhalten über den Viewport hinaus.
+*/
+main{
+    overflow-x: hidden;
+    margin: 2rem;
+    }
+    
+#text{
+        background-color:white;
+        border-radius: 5px;
+        text-align: left;
+    }
+    
+/*Design Sidebar*/
+#sidebar{
+    border-radius: 5px;
+}
+
+/*Link Design*/
+.Link{
+    text-decoration: none;
+    color:rgb(64, 60, 60);
+    font-weight: bold;
+}
+/*
+Wenn Maus-Cursor auf einen Link zeigt, wird die Schriftfarbe geändert
+Bei Klick auf einen Link wird dieser Unterstrichen.
+*/
+.Link:hover{
+    color:cornflowerblue;
+}
+.Link:active{
+    text-decoration: underline;
+}
+
+/*Listenpunkte entfernen*/
+li{
+    list-style-type: none;
+}

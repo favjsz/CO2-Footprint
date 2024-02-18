@@ -1,18 +1,18 @@
-footer{
-    background-color: rgb(184, 184, 213);
+body{
+    background-color: rgb(226, 228, 229);
 }
 
 /*
 Footer-Position am unteren Bildschirmrand
 Das Body-Element hat vh = viewport height (100%
 */
-body{
-    min-height: 100%;
-    background-color: rgb(226, 228, 229);
-}
 footer{
-    position:sticky;
-    top: 100%;
+position: sticky;
+left: 0;
+right: 0;
+bottom: 0;
+
+background-color: rgb(184, 184, 213);
 }
 
 /*Link Design*/

@@ -9,6 +9,9 @@ Overflow verhindert das Darstellen von Inhalten über den Viewport hinaus.
 main{
     overflow-x: hidden;
     margin: 2rem;
+
+    /*footer position at the bottom of the page*/
+    min-height: 100vh;
     }
     
 #text{

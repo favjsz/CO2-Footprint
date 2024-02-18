@@ -6,6 +6,7 @@ import { AboutComponent } from '../about/about.component';
 import { DonateComponent } from '../donate/donate.component';
 import { PrivacyComponent } from '../privacy/privacy.component';
 import { ImprintComponent } from '../imprint/imprint.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-content',
@@ -17,7 +18,8 @@ import { ImprintComponent } from '../imprint/imprint.component';
     AboutComponent,
     DonateComponent,
     PrivacyComponent,
-    ImprintComponent
+    ImprintComponent,
+    TranslateModule
   ],
   templateUrl: './content.component.html',
   styleUrl: './content.component.css'

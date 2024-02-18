@@ -7,10 +7,15 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { ImprintComponent } from './imprint/imprint.component';
 
 export const routes: Routes = [
+    {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+    },
     {'path': 'home', component:HomeComponent},
     {'path': 'table', component:TableComponent},
     {'path': 'donate', component:DonateComponent},
     {'path': 'about', component:AboutComponent},
     {'path': 'privacy', component:PrivacyComponent},
-    {'path': 'imprint', component:ImprintComponent}
+    {'path': 'imprint', component:ImprintComponent},
 ];

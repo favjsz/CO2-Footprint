@@ -8,9 +8,9 @@
     aria-label="Toggle navigation": Beschreibung, was gemacht wird.
     -->
     <nav class="navbar navbar-expand-lg navbar-light ">
-      <div class="container">
+      <div class="container" id="layoutSelect">
         <a class="navbar-brand">
-          <span class="fw-bold text-secondary">CO²-Footprint</span>
+          <span class="fw-bold text-secondary">CO²-Fußabdruck</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -21,8 +21,8 @@
             target="_blank" öffnet den Link in einem neuen Tab
             Darstellung von den Links zur Sprachauswahl, Facebook und Instagram als Bootstrap Icon.
         -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" id="layoutSelect">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="ArDesign1">
             <li class="nav-item">
               <a target="_blank" class="nav-link" href="https://www.facebook.com/co2Footprint"><i class="bi bi-facebook"></i></a>
             </li>
@@ -34,23 +34,23 @@
                 <i class="bi bi-translate"></i>
               </a>
               <!--Dropdown für Sprachauswahl-->
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <section class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="deutsch.html">deutsch</a>
+                  <a class="dropdown-item" (click)="switchLanguage('de')">deutsch</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="englisch.html">englisch</a>
+                  <a class="dropdown-item" (click)="switchLanguage('en')">englisch</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="arabisch.html">arabisch</a>
+                  <a class="dropdown-item" (click)="switchLanguage('ar')">arabisch</a>
                 </li>
-              </ul>
+              </section>
             </li>
           </ul>
           <!--Suchleiste und Such-Button-->
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+          <form class="d-flex" id="layoutSelect">
+            <input id="searchbar" class="form-control me-2" type="search" placeholder="Suche" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Suche</button>
           </form>
         </div>
       </div>

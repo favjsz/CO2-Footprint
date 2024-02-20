@@ -1,1 +1,35 @@
-<p>Tabelle funktioniert!</p>
+<!-- table-responsive: Bei kleineren Bildschirmen wird die Tabelle seitlich scrollbar -->
+<div class="table-responsive">  
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th class="table-head">Land</th>
+                <th class="table-head">Unternehmen</th>
+                <th class="table-head">Emmissionen 2024</th>
+                <th class="table-head">Emmissionen 2023</th>
+                <th class="table-head">Tendenz</th>
+                <th class="table-head">⌀ Gesamt (t/p.a.)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let tableData of emissionData">
+                <td>{{ tableData.country}}</td>
+                <td>{{ tableData.company}}</td>
+                <td>{{ tableData.emissionThisYear}}</td>
+                <td>{{ tableData.emissionLastYear}}</td>
+                <td>
+                    <div *ngIf="tableData.emissionLastYear > tableData.emissionThisYear">
+                        <i class="bi bi-arrow-down-right-circle-fill"></i>
+                    </div>
+                    <div *ngIf="tableData.emissionLastYear == tableData.emissionThisYear">
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                    </div>
+                    <div *ngIf="tableData.emissionLastYear < tableData.emissionThisYear">
+                        <i class="bi bi-arrow-up-right-circle-fill"></i>
+                    </div>
+                </td>
+                <td>{{ tableData.emissionInTotal }}</td>
+            </tr>            
+        </tbody>
+    </table>
+</div>

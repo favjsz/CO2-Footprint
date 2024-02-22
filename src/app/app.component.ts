@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { AppModule } from './app.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { TableComponent } from './table/table.component';
-import { TableData, dataset } from './data-source';
+
 
 
 @Component({

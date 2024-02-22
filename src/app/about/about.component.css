@@ -1,0 +1,6 @@
+/* Größen für Cards festlegen */
+.example-card {
+    max-width: 360px;
+    min-height: 520px;
+    background-color: rgb(173, 180, 181);
+  }

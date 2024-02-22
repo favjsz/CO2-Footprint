@@ -21,7 +21,7 @@
             target="_blank" öffnet den Link in einem neuen Tab
             Darstellung von den Links zur Sprachauswahl, Facebook und Instagram als Bootstrap Icon.
         -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" id="layoutSelect">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="ArDesign1">
             <li class="nav-item">
               <a target="_blank" class="nav-link" href="https://www.facebook.com/co2Footprint"><i class="bi bi-facebook"></i></a>
@@ -34,17 +34,17 @@
                 <i class="bi bi-translate"></i>
               </a>
               <!--Dropdown für Sprachauswahl-->
-              <section class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" (click)="switchLanguage('de')">deutsch</a>
+                  <a class="dropdown-item" (click)="switchLanguage('de')">Deutsch</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" (click)="switchLanguage('en')">englisch</a>
+                  <a class="dropdown-item" (click)="switchLanguage('en')">Englisch</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" (click)="switchLanguage('ar')">arabisch</a>
+                  <a class="dropdown-item" (click)="switchLanguage('ar')">Arabisch</a>
                 </li>
-              </section>
+              </ul>
             </li>
           </ul>
           <!--Suchleiste und Such-Button-->

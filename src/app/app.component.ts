@@ -4,6 +4,9 @@ import { HeaderNavComponent } from './header-nav/header-nav.component';
 import { ContentComponent } from './content/content.component';
 import { CommonModule } from '@angular/common';
 import { AppModule } from './app.module';
+import { TranslateModule } from '@ngx-translate/core';
+import { TableComponent } from './table/table.component';
+
 
 
 @Component({
@@ -14,7 +17,9 @@ import { AppModule } from './app.module';
     RouterOutlet,
     HeaderNavComponent,
     ContentComponent,
-    CommonModule
+    CommonModule,
+    TableComponent,
+    TranslateModule
   ],
   templateUrl: './app.component.html', 
   styleUrl: './app.component.css'

@@ -160,7 +160,7 @@ export const dataset: Array<TableData> = [
         "country": "Indien",
         "company": "Tata Group",
         "emissionLastYear": 100000,
-        "emissionThisYear": 105000,
+        "emissionThisYear": 100000,
         "emissionInTotal": 500000
       },
       {
@@ -174,7 +174,7 @@ export const dataset: Array<TableData> = [
         "country": "Indien",
         "company": "State Bank of India",
         "emissionLastYear": 60000,
-        "emissionThisYear": 65000,
+        "emissionThisYear": 60000,
         "emissionInTotal": 300000
       },
       {
@@ -293,7 +293,7 @@ export const dataset: Array<TableData> = [
         "country": "Italien",
         "company": "Eni",
         "emissionLastYear": 70000,
-        "emissionThisYear": 75000,
+        "emissionThisYear": 750000,
         "emissionInTotal": 350000
       },
       {
@@ -426,7 +426,7 @@ export const dataset: Array<TableData> = [
         "country": "Korea",
         "company": "Korean Air",
         "emissionLastYear": 70000,
-        "emissionThisYear": 75000,
+        "emissionThisYear": 70000,
         "emissionInTotal": 350000
       },
       {
@@ -454,14 +454,14 @@ export const dataset: Array<TableData> = [
         "country": "Mexiko",
         "company": "Grupo México",
         "emissionLastYear": 60000,
-        "emissionThisYear": 65000,
+        "emissionThisYear": 50400,
         "emissionInTotal": 300000
       },
       {
         "country": "Mexiko",
         "company": "FEMSA",
         "emissionLastYear": 50000,
-        "emissionThisYear": 55000,
+        "emissionThisYear": 20000,
         "emissionInTotal": 25000
       },
       {
@@ -524,7 +524,7 @@ export const dataset: Array<TableData> = [
         "country": "Indonesien",
         "company": "Bank Central Asia",
         "emissionLastYear": 70000,
-        "emissionThisYear": 75000,
+        "emissionThisYear": 41000,
         "emissionInTotal": 350000
       },
       {
@@ -580,7 +580,7 @@ export const dataset: Array<TableData> = [
         "country": "Niederlande",
         "company": "Unilever",
         "emissionLastYear": 130000,
-        "emissionThisYear": 135000,
+        "emissionThisYear": 100000,
         "emissionInTotal": 650000
       },
       {
@@ -643,7 +643,7 @@ export const dataset: Array<TableData> = [
         "country": "Schweiz",
         "company": "Nestlé",
         "emissionLastYear": 100000,
-        "emissionThisYear": 105000,
+        "emissionThisYear": 500000,
         "emissionInTotal": 500000
       },
       {

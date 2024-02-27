@@ -1,15 +1,16 @@
-import { Component, NgModule, NgModuleRef } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TableData, dataset } from '../data-source';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from '../app.component';
 import { AppModule } from '../app.module';
-import {AfterViewInit, ViewChild} from '@angular/core';
-import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
-import {MatSort, MatSortModule} from '@angular/material/sort';
-import {MatTableDataSource, MatTableModule} from '@angular/material/table';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { ViewChild} from '@angular/core';
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatSort, MatSortModule } from '@angular/material/sort';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-table',
@@ -23,11 +24,13 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatInputModule, 
     MatTableModule, 
     MatSortModule, 
-    MatPaginatorModule
+    MatPaginatorModule,
+    TranslateModule
   ],
   templateUrl: './table.component.html',
   styleUrl: './table.component.css'
 })
+
 export class TableComponent {
 
   displayedColumns: string[] = ['country', 
@@ -37,14 +40,14 @@ export class TableComponent {
                                 'tendency',
                                 'emissionInTotal' 
                               ];
+
   dataSource: MatTableDataSource<TableData>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
   constructor() {
-
-    // Assign the data to the data source for the table to render
+    // Zuweisung der Daten für die zu rendernde Tabelle
     this.dataSource = new MatTableDataSource(dataset);
   }
 

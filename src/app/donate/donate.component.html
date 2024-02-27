@@ -4,39 +4,32 @@
 </div>
 <!-- text mit Bootstrap-Klasse für das Schriftdesign-->
 <div class="text-secondary">
-    <h1>Hilf uns mit Spenden</h1>
+    <h1>{{ 'donateHead' | translate }}</h1>
     <p>
-        Werde auch Unterstützer eines Klimaschutz-Projektes. 
-        Wähle aus den folgenden Initiativen dein Herzensprojekt aus:
+        {{ 'donateSelProject' | translate }}
     </p>
-    <h2>1. Förderung der regionalen Wälder</h2>
+    <h2>{{ 'donateProjectOne' | translate }}</h2>
     <p>
-        Durch unsere Wälder wird der Kohlenstoff aus dem CO² gespeichert. 
-        Wir pflanzen mit dem Spendengeld Bäume und leisten einen Beitrag zum Erhalt 
-        des Lebensraumes von vielen Tieren und einem natürlichen CO²-Speicher.
+        {{ 'donatePrOneText' | translate }}
     </p>
-    <h2>2. Investition in erneuerbare Energien</h2>
+    <h2>{{ 'donateProjectTwo' | translate }}</h2>
     <p>
-        Investitionen in die Energien der Zukunft sorgen für eine schnellere 
-        Transformation hin zu einer nachhaltigeren Wirtschaft. 
-        Wir unterstützen in diesem Projekt den Bau von Windparks in Norddeutschland.
+        {{ 'donatePrTwoText' | translate }}
     </p>
-    <h2>3. Nachhaltiges Kerosin</h2>
+    <h2>{{ 'donateProjectThree' | translate }}</h2>
     <p>
-        Flugzeuge verbinden die Welt miteinander, stoßen allerdings auch sehr viel klimaschädliche Emissionen aus.
-        Mit der Förderung von klimaverträglicheren Kerosin kann der Ausstoß zukünftig minimiert werden. 
-        Unser drittes Projekt unterstützt die Grundlagenforschung in diesem Bereich.
+        {{ 'donatePrThreeText' | translate }}
     </p>
 </div>
 <mat-divider></mat-divider>
 <div class="text-secondary">
     <br>
-    <h1>Kontodaten</h1>
-    <p>Überweise die Spende bitte auf folgendes Konto:</p>
+    <h1>{{ 'donateAccData' | translate }}</h1>
+    <p>{{ 'donateAccNote' | translate }}</p>
     <p>
-        Kontoführer: CO2-Fußabdruck <br>
+         {{ 'donateAccUser' | translate }}<br>
         IBAN: DE24 2000 0005 54851 XXX XX<br>
-        Verwendungszweck: [Name des Projektes]
+        {{ 'donateUsage' | translate }}
     </p>
-    <h2>Danke für deine Hilfe.</h2>
+    <h2>{{ 'donateThanks' | translate }}</h2>
 </div>

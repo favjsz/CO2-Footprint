@@ -6,6 +6,10 @@ import { CommonModule } from "@angular/common";
 import { AppComponent } from "./app.component";
 import { TableComponent } from "./table/table.component";
 import { AboutComponent } from "./about/about.component";
+import { HomeComponent } from "./home/home.component";
+import { DonateComponent } from "./donate/donate.component";
+import { ImprintComponent } from "./imprint/imprint.component";
+import { PrivacyComponent } from "./privacy/privacy.component";
 
 @NgModule({
     declarations: [],
@@ -16,6 +20,10 @@ import { AboutComponent } from "./about/about.component";
         HttpClientModule,
         TableComponent,
         AboutComponent,
+        HomeComponent,
+        DonateComponent,
+        ImprintComponent,
+        PrivacyComponent,
         TranslateModule.forRoot({
             loader:{
                 provide: TranslateLoader,

@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about',
   standalone: true,
   imports: [
-    MatCardModule
+    MatCardModule,
+    TranslateModule
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'

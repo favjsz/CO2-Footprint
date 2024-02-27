@@ -6,16 +6,18 @@ import { DonateComponent } from './donate/donate.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { ImprintComponent } from './imprint/imprint.component';
 
-export const routes: Routes = [
+const routes: Routes = [
     {
         path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
+        component: HomeComponent,
+        title: 'CO² Footprint'
     },
-    {'path': 'home', component:HomeComponent},
-    {'path': 'table', component:TableComponent},
-    {'path': 'donate', component:DonateComponent},
-    {'path': 'about', component:AboutComponent},
-    {'path': 'privacy', component:PrivacyComponent},
-    {'path': 'imprint', component:ImprintComponent},
+    { path: 'home', component: HomeComponent },
+    { path: 'table', component: TableComponent },
+    { path: 'donate', component: DonateComponent },
+    { path: 'about', component: AboutComponent },
+    { path: 'privacy', component: PrivacyComponent },
+    { path: 'imprint', component: ImprintComponent },
 ];
+
+export default routes;
